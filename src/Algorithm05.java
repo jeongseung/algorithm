@@ -1,6 +1,4 @@
-package algo.algo5;
-
-public class UpperAndLower1008 {
+public class Algorithm05 {
     public static void main(String[] args) {
         String str = "helloWorlD";
         StringBuilder sb = new StringBuilder();

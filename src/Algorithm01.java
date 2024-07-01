@@ -1,14 +1,12 @@
-package algo.algo1;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Student1008 {
+public class Algorithm01 {
     private String name;
     private String no;
 
 
-    public Student1008(String name, String no) {
+    public Algorithm01(String name, String no) {
         this.name = name;
         this.no = no;
     }
@@ -38,14 +36,14 @@ public class Student1008 {
 
     }
     public static void main(String[] args) {
-        ArrayList<Student1008> list = new ArrayList<>();
-        Student1008 stu1 = new Student1008("정승우", "1");
-        Student1008 stu2 = new Student1008("전수빈", "2");
-        Student1008 stu3 = new Student1008("정원석", "3");
+        ArrayList<Algorithm01> list = new ArrayList<>();
+        Algorithm01 stu1 = new Algorithm01("정승우", "1");
+        Algorithm01 stu2 = new Algorithm01("전수빈", "2");
+        Algorithm01 stu3 = new Algorithm01("정원석", "3");
         list.add(stu1);
         list.add(stu2);
         list.add(stu3);
-        for(Student1008 s : list) {
+        for(Algorithm01 s : list) {
             System.out.println(s.getName());
             System.out.println(s.getNo());
         }
@@ -57,7 +55,7 @@ public class Student1008 {
                 System.out.println("검색하려는 학생이름을 쓰세요");
                 String str = sc.next();
                 boolean flag = false;
-                for(Student1008 stu : list) {
+                for(Algorithm01 stu : list) {
                     if(stu.getName().equals(str)) {
                         System.out.println(stu.getNo());
                         flag = true;

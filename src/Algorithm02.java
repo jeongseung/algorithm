@@ -1,6 +1,4 @@
-package algo.algo2;
-
-public class Fibonacci1008 {
+public class Algorithm02 {
     public static void main(String[] args) {
         int[] arr = new int[100];
         //An = An-1 + An-2; n>=3

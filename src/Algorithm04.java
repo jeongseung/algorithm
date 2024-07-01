@@ -1,8 +1,6 @@
-package algo.algo4;
-
 import java.util.Scanner;
 
-public class Binary1008 {
+public class Algorithm04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[100];

@@ -1,8 +1,6 @@
-package algo.algo3;
-
 import java.util.Scanner;
 
-public class Mode1008 {
+public class Algorithm03 {
     public static void main(String[] args) {
         int[] mode = new int[10];
         Scanner sc = new Scanner(System.in);
