@@ -5,12 +5,12 @@ public class Algorithm06 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        JeongSeung1008 jeongSeung1008 = new JeongSeung1008();
-        System.out.println(jeongSeung1008.gcd(n, m));
+        JeongSeung06 jeongSeung06 = new JeongSeung06();
+        System.out.println(jeongSeung06.gcd(n, m));
     }
 }
 
-class JeongSeung1008 {
+class JeongSeung06 {
 
     public int gcd(int n, int m) {
 
