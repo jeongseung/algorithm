@@ -2,28 +2,31 @@ import java.util.Scanner;
 
 public class Algorithm03 {
     public static void main(String[] args) {
-        int[] mode = new int[10];
         Scanner sc = new Scanner(System.in);
-        for(int i=0; i<mode.length; i++) {
-            mode[i] = sc.nextInt();
+        int[] arr = new int[10];
+        for(int i=0; i<10; i++) {
+            arr[i] = sc.nextInt();
         }
-        int[] tmp = new int[mode.length];
-        for(int i=0; i<mode.length; i++) {
-            int d = mode[i];
-            tmp[d]++;
-        }
+        JeongSeung3 jeongSeung3 = new JeongSeung3();
+        System.out.println(jeongSeung3.findMode(arr));
+    }
+}
 
+class JeongSeung3 {
+
+    int findMode(int[] arr) {
+        int mode[] = new int[10];
+        for(int i=0; i<10; i++) {
+            mode[arr[i]]++;
+        }
         int max = 0;
         int idx = 0;
-        for(int i=0; i<mode.length; i++) {
-            if(tmp[i]>max) {
-                max = tmp[i];
+        for(int i=0; i<10; i++) {
+            if(max<mode[i]) {
+                max = mode[i];
                 idx = i;
             }
         }
-
-        System.out.println(idx);
-
-
+        return idx;
     }
 }
